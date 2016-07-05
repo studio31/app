@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+xmlns:gap   = "http://phonegap.com/ns/1.0"
+id          = "com.publicarme.asomies"
+versionCode = "10" 
+version     = "0.9.4" >  
+
+    <name>ASOMIES</name>
+    <description>
+        Asociación de Medicina Interna de El Salvador.
+    </description>
+    <author email="jcgorospe@publicar.me" href="http://publicar.me">
+        Médicos de El Salvador y Publicar.Me
+    </author>
+    <content src="index.html"/>
+    <gap:platform name="ios" />
+    <gap:platform name="android" />
+    <plugin name="cordova-plugin-whitelist" version="1"/>
+    <access origin="*" />
+
+    <!-- preferences -->
+    <preference name="KeyboardDisplayRequiresUserAction" value="true"/>
+    <preference name="MediaPlaybackRequiresUserAction" value="false"/>
+    <preference name="AllowInlineMediaPlayback" value="true"/>
+    <preference name="DisallowOverscroll" value="true"/>
+    <preference name="webviewbounce" value="false"/>
+    <preference name="SplashScreen" value="screen"/>
+    <preference name="SplashScreenDelay" value="3000"/>
+    <access origin="*"/>
+    <allow-intent href="http://*/*"/>
+    <allow-intent href="https://*/*"/>
+    <allow-intent href="tel:*"/>
+    <allow-intent href="sms:*"/>
+    <allow-intent href="mailto:*"/>
+    <allow-intent href="geo:*"/>
+
+	<icon src="icon.png" />	
+
+    <gap:plugin name="org.apache.cordova.geolocation"  />
+    <gap:plugin name="org.apache.cordova.inappbrowser"  />
+
+</widget>
